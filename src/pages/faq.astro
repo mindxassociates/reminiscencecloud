@@ -1,0 +1,4 @@
+---
+import Base from '../layouts/Base.astro'; import Cta from '../components/Cta.astro'; import page from '../content/pages/faq.json';
+---
+<Base title={page.title} counterpart="/zh/faq/"><section class="page-hero"><p class="kicker">FAQ</p><h1>{page.heading}</h1><p>{page.intro}</p></section><section class="faq">{page.groups.map(group=><section class="faq-group"><h2>{group.title}</h2>{group.items.map(x=>x.answer?<details><summary>{x.question}</summary><p>{x.answer}</p></details>:<div class="faq-question">{x.question}</div>)}</section>)}</section><section class="faq-help"><h2>Still have questions?</h2><p>I'm happy to answer anything that isn't covered here. Reach out and I'll get back to you within 1–2 business days.</p><a class="button" href="/en/book/">Request a Free Consultation</a></section><Cta/></Base>

@@ -1,0 +1,123 @@
+media:
+  input: public/images/uploads
+  output: /images/uploads
+content:
+  - name: settings
+    label: Site settings / 网站设置
+    type: file
+    path: src/content/settings.json
+    format: json
+    fields:
+      - { name: practiceName, label: Practice name, type: string, required: true }
+      - { name: tagline, label: Tagline, type: string, required: true }
+      - { name: primaryCtaLabel, label: Main button label, type: string, required: true }
+      - { name: email, label: Public email, type: string }
+      - { name: phone, label: Public phone, type: string }
+      - { name: location, label: Service area, type: string, required: true }
+      - { name: schedulingUrl, label: Secure consultation link, type: string }
+      - { name: schedulingUrlZh, label: 中文预约链接, type: string }
+      - { name: instagramUrl, label: Instagram link, type: string }
+      - { name: linkedinUrl, label: LinkedIn link, type: string }
+  - name: home_en
+    label: Home (English)
+    type: file
+    path: src/content/pages/home.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Intro label, type: string }
+      - { name: title, label: Main heading, type: string, required: true }
+      - { name: intro, label: Introduction, type: text, required: true }
+      - { name: availability, label: Availability line, type: string }
+      - { name: welcomeTitle, label: Welcome heading, type: string }
+      - { name: welcomeBody, label: Welcome text 1, type: text }
+      - { name: welcomeBodyTwo, label: Welcome text 2, type: text }
+      - name: areas
+        label: Areas of focus
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: body, label: Description, type: text }
+      - name: testimonials
+        label: Testimonials
+        type: object
+        list: true
+        fields:
+          - { name: quote, label: Quote, type: text }
+          - { name: attribution, label: Attribution, type: string }
+  - name: home_zh
+    label: 首页（中文）
+    type: file
+    path: src/content/pages/zh/home.json
+    format: json
+    fields:
+      - { name: eyebrow, label: 顶部说明, type: string }
+      - { name: title, label: 主标题, type: string, required: true }
+      - { name: intro, label: 简介, type: text, required: true }
+      - { name: availability, label: 服务状态, type: string }
+      - { name: welcomeTitle, label: 欢迎区标题, type: string }
+      - { name: welcomeBody, label: 欢迎区正文一, type: text }
+      - { name: welcomeBodyTwo, label: 欢迎区正文二, type: text }
+      - name: areas
+        label: 关注领域
+        type: object
+        list: true
+        fields:
+          - { name: title, label: 标题, type: string }
+          - { name: body, label: 说明, type: text }
+      - name: testimonials
+        label: 来访者评价
+        type: object
+        list: true
+        fields:
+          - { name: quote, label: 评价内容, type: text }
+          - { name: attribution, label: 署名, type: string }
+  - name: stable_pages_en
+    label: About and Services (English)
+    type: collection
+    path: src/content/pages
+    format: json
+    operations: { create: false, delete: false }
+    view: { fields: [title, heading] }
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: heading, label: Main heading, type: string }
+      - { name: subheading, label: Subheading, type: text }
+      - { name: intro, label: Introduction, type: text }
+      - { name: body, label: Main text, type: text }
+      - { name: secondary, label: Additional text, type: text }
+      - { name: expectation, label: What to expect, type: text }
+      - { name: consultation, label: Consultation text, type: text }
+  - name: stable_pages_zh
+    label: 关于我与服务（中文）
+    type: collection
+    path: src/content/pages/zh
+    format: json
+    operations: { create: false, delete: false }
+    view: { fields: [title, heading] }
+    fields:
+      - { name: title, label: 页面标题, type: string }
+      - { name: heading, label: 主标题, type: string }
+      - { name: subheading, label: 副标题, type: text }
+      - { name: intro, label: 简介, type: text }
+      - { name: body, label: 主要内容, type: text }
+      - { name: secondary, label: 补充内容, type: text }
+      - { name: expectation, label: 咨询体验, type: text }
+      - { name: consultation, label: 免费咨询说明, type: text }
+  - name: posts
+    label: Blog posts / 博客
+    type: collection
+    path: src/content/posts
+    format: yaml-frontmatter
+    filename: '{fields.title}.md'
+    view: { fields: [title, date, published] }
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: summary, label: Short summary, type: text, required: true }
+      - { name: date, label: Publication date, type: date, required: true }
+      - { name: published, label: Published, type: boolean, default: false }
+      - { name: featuredImage, label: Featured image, type: image }
+      - { name: imageAlt, label: Image description, type: string }
+      - { name: seoTitle, label: Search title, type: string }
+      - { name: seoDescription, label: Search description, type: text }
+      - { name: body, label: Article, type: rich-text, required: true }
