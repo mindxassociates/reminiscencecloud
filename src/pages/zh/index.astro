@@ -2,3 +2,21 @@
 import Base from '../../layouts/Base.astro'; import Cta from '../../components/Cta.astro'; import home from '../../content/pages/zh/home.json'; import settings from '../../content/settings.json'; import { withBase } from '../../paths.js';
 ---
 <Base title="Reminiscence Cloud" locale="zh" counterpart="/"><section class="hero"><div class="hero-copy"><p class="kicker">{home.eyebrow}</p><h1>{home.title}</h1><p>{home.intro}</p><a class="button" href={withBase(settings.schedulingUrlZh)}>预约免费 15 分钟咨询</a><p class="availability">{home.availability}</p></div></section><section class="intro-story"><div><p class="kicker">认识苗秀云 Sharon Miao，LCSW</p><h2>{home.welcomeTitle}</h2><p>{home.welcomeBody}</p><p>{home.welcomeBodyTwo}</p></div><img src={withBase('/images/coast.jpg')} alt="心理咨询师苗秀云 Sharon Miao，LCSW 坐在海边长椅上"></section><section class="soft focus-section"><div class="section-head"><p class="kicker">关注领域</p><h2>我们可以共同面对的问题</h2></div><div class="focus-grid">{home.areas.map(x=><article><h3>{x.title}</h3><p>{x.body}</p></article>)}</div></section><section class="testimonials"><p class="kicker">来访者评价</p><div class="quote-grid">{home.testimonials.map(x=><blockquote><span aria-hidden="true">″</span><p>“{x.quote}”</p><cite>— {x.attribution}</cite></blockquote>)}</div></section><Cta locale="zh"/></Base>
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.body.classList.add('home-motion');
+    const sections = document.querySelectorAll('main > section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    sections.forEach((section, index) => {
+      if (index === 0) section.classList.add('is-visible');
+      observer.observe(section);
+    });
+  }
+</script>
