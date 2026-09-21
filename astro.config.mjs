@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://reminiscencecloud.com',
+  site: process.env.SITE_URL || 'https://reminiscencecloud.com',
+  base: process.env.BASE_PATH || '/',
   output: 'static',
 });

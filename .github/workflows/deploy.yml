@@ -15,22 +15,24 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+env:
+  # Preview deployment. For the final root domain, change these to:
+  # SITE_URL: https://reminiscencecloud.com
+  # BASE_PATH: /
+  SITE_URL: https://projects.mindx.us
+  BASE_PATH: /reminiscencecloud
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-
       - run: npm install
       - run: npm run build
-
       - uses: actions/configure-pages@v5
-
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
@@ -41,7 +43,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Deploy
         id: deployment

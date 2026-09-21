@@ -26,8 +26,6 @@ No third-party platform code, tracking identifiers, or unverified external image
 | Legacy English home | `/en/` | Retained as a redirect to `/` |
 | Legacy English pages | `/en/about/`, `/en/services/`, `/en/faq/`, `/en/blog/` | Retained as redirects |
 | Consultation request | `/en/book/` and `/zh/book/` | Routes retained; approved form/service still required |
-| Website privacy policy | `/privacy-policy/` and `/zh/privacy-policy/` | Bilingual draft added; operational review required |
-| HIPAA notice | `/hipaa-notice/` and `/zh/hipaa-notice/` | Bilingual review draft added using current HHS model structure |
 
 ## CMS map
 
@@ -38,4 +36,4 @@ No third-party platform code, tracking identifiers, or unverified external image
 
 ## Before cutover
 
-Connect the approved secure consultation form or scheduling service; confirm fees, insurance, payment, cancellation, and rescheduling policies; review testimonials for compliance; complete legal review of both privacy notices; test the bilingual preview; record existing DNS and email records; and keep the current service active. After launch, verify the domain, HTTPS, all primary routes, language links, sitemap, contact actions, and rollback path.
+Connect the approved secure consultation form or scheduling service; confirm fees, insurance, payment, cancellation, and rescheduling policies; review testimonials for compliance; test the bilingual preview; record existing DNS and email records; and keep the current service active. After launch, verify the domain, HTTPS, all primary routes, language links, sitemap, contact actions, and rollback path.
