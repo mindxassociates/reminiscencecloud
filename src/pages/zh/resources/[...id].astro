@@ -1,0 +1,5 @@
+---
+import { withBase } from '../../../paths.js'; import { getCollection } from 'astro:content';
+export async function getStaticPaths(){const p=await getCollection('postsZh',x=>x.data.published);return p.map(post=>({params:{id:post.id},props:{post}}))}
+const {post}=Astro.props; return Astro.redirect(withBase(`/zh/blog/${post.id}/`),301);
+---

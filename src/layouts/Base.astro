@@ -5,7 +5,7 @@ import '../styles/global.css'; import '../styles/content.css'; import '../styles
 interface Props { title: string; description?: string; locale?: 'en'|'zh'; counterpart?: string; robots?: string; }
 const { title, description: suppliedDescription, locale='en', counterpart, robots='index,follow' } = Astro.props;
 const path=withoutBase(Astro.url.pathname); const zh=locale==='zh'; const description=suppliedDescription||(zh?'为成年人提供创伤知情心理咨询。':settings.tagline);
-const nav=zh?[['/zh/','首页'],['/zh/about/','关于我'],['/zh/services/','服务'],['/zh/resources/','博客'],['/zh/faq/','常见问题'],['/zh/contact/','联系我']]:[['/','Home'],['/about/','About'],['/services/','Services'],['/resources/','Blog'],['/faq/','FAQ'],['/contact/','Reach Out']];
+const nav=zh?[['/zh/','首页'],['/zh/about/','关于我'],['/zh/services/','服务'],['/zh/blog/','博客'],['/zh/faq/','常见问题'],['/zh/contact/','联系我']]:[['/','Home'],['/about/','About'],['/services/','Services'],['/blog/','Blog'],['/faq/','FAQ'],['/contact/','Reach Out']];
 const languageHref=counterpart||(zh?path.replace(/^\/zh/,'')||'/':`/zh${path}`);
 const canonical=new URL(withBase(path),Astro.site);
 const alternate=new URL(withBase(languageHref),Astro.site);

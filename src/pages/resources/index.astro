@@ -1,5 +1,4 @@
 ---
-import Base from '../../layouts/Base.astro'; import { getCollection } from 'astro:content'; import { withBase } from '../../paths.js';
-const posts=(await getCollection('posts',p=>p.data.published)).sort((a,b)=>b.data.date.valueOf()-a.data.date.valueOf());
+import { withBase } from '../../paths.js';
+return Astro.redirect(withBase('/blog/'), 301);
 ---
-<Base title="Resources" counterpart="/zh/resources/"><section class="page-hero"><p class="kicker">Reflections & resources</p><h1>Thoughtful reading for the path ahead.</h1></section><section class="cards">{posts.length?posts.map(p=><article><h2><a href={withBase(`/resources/${p.id}/`)}>{p.data.title}</a></h2><p>{p.data.summary}</p></article>):<article><h2>Resources are coming soon.</h2><p>Published articles will appear here automatically.</p></article>}</section></Base>

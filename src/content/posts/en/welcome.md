@@ -1,5 +1,6 @@
 ---
 title: Welcome to the journal
+slug: welcome
 summary: A private draft showing how future resources will look.
 date: 2026-09-19
 published: false

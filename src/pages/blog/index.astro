@@ -1,0 +1,5 @@
+---
+import Base from '../../layouts/Base.astro'; import { getCollection } from 'astro:content'; import { withBase } from '../../paths.js';
+const posts=(await getCollection('postsEn',p=>p.data.published)).sort((a,b)=>b.data.date.valueOf()-a.data.date.valueOf());
+---
+<Base title="Blog" counterpart="/zh/blog/"><section class="page-hero"><p class="kicker">Blog</p><h1>Thoughtful reading for the path ahead.</h1></section><section class="cards">{posts.length?posts.map(p=><article><h2><a href={withBase(`/blog/${p.id}/`)}>{p.data.title}</a></h2><p>{p.data.summary}</p></article>):<article><h2>Articles are coming soon.</h2><p>Published English posts will appear here automatically.</p></article>}</section></Base>

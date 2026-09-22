@@ -104,14 +104,15 @@ content:
       - { name: secondary, label: 补充内容, type: text }
       - { name: expectation, label: 咨询体验, type: text }
       - { name: consultation, label: 免费咨询说明, type: text }
-  - name: posts
-    label: Blog posts / 博客
+  - name: posts_en
+    label: Blog posts (English)
     type: collection
-    path: src/content/posts
+    path: src/content/posts/en
     format: yaml-frontmatter
-    filename: '{fields.title}.md'
+    filename: '{fields.slug}.md'
     view: { fields: [title, date, published] }
     fields:
+      - { name: slug, label: URL slug, type: string, required: true, description: "Use lowercase English words separated by hyphens, such as understanding-anxiety." }
       - { name: title, label: Title, type: string, required: true }
       - { name: summary, label: Short summary, type: text, required: true }
       - { name: date, label: Publication date, type: date, required: true }
@@ -121,3 +122,21 @@ content:
       - { name: seoTitle, label: Search title, type: string }
       - { name: seoDescription, label: Search description, type: text }
       - { name: body, label: Article, type: rich-text, required: true }
+  - name: posts_zh
+    label: 中文博客文章
+    type: collection
+    path: src/content/posts/zh
+    format: yaml-frontmatter
+    filename: '{fields.slug}.md'
+    view: { fields: [title, date, published] }
+    fields:
+      - { name: slug, label: 网址名称, type: string, required: true, description: "请使用小写英文和连字符，例如 understanding-anxiety。" }
+      - { name: title, label: 文章标题, type: string, required: true }
+      - { name: summary, label: 简短摘要, type: text, required: true }
+      - { name: date, label: 发布日期, type: date, required: true }
+      - { name: published, label: 已发布, type: boolean, default: false }
+      - { name: featuredImage, label: 文章图片, type: image }
+      - { name: imageAlt, label: 图片说明, type: string }
+      - { name: seoTitle, label: 搜索标题, type: string }
+      - { name: seoDescription, label: 搜索摘要, type: text }
+      - { name: body, label: 文章正文, type: rich-text, required: true }

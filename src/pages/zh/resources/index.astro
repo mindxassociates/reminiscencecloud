@@ -1,4 +1,4 @@
 ---
-import Base from '../../../layouts/Base.astro';
+import { withBase } from '../../../paths.js';
+return Astro.redirect(withBase('/zh/blog/'),301);
 ---
-<Base title="博客" locale="zh" counterpart="/resources/"><section class="page-hero"><p class="kicker">文章与资源</p><h1>陪伴您继续探索的阅读。</h1><p>中文文章发布后会显示在这里。</p></section><section class="cards"><article><h2>内容即将上线</h2><p>未来发布的中文文章会自动出现在这里。</p></article></section></Base>
