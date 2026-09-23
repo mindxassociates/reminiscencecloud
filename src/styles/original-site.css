@@ -19,3 +19,13 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .footer-profile{grid-column:1/-1;margin:0;text-align:center}.footer-profile a{text-underline-offset:4px}
 
 .footer-profile .sx-verified-seal{display:inline-block}.footer-profile .sx-verified-seal img{margin-inline:auto}
+
+/* Center the footer, keeping contact and verification together. */
+footer{text-align:center;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+footer .footer-brand{justify-content:center}
+footer .footer-crisis p{margin-inline:auto}
+footer .footer-reach-out{min-width:0}
+footer .footer-reach-out a{overflow-wrap:anywhere}
+footer .footer-profile{display:flex;justify-content:center;align-items:center;margin-top:24px}
+footer .footer-profile .sx-verified-seal{float:none!important;margin-inline:auto!important}
+@media(max-width:800px){footer{grid-template-columns:1fr;gap:32px}.footer-brand{margin-bottom:20px}}
