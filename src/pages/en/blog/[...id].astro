@@ -1,0 +1,6 @@
+---
+import { getCollection } from 'astro:content';
+import { withBase } from '../../../paths.js';
+export async function getStaticPaths() { return (await getCollection('postsEn', p => p.data.published)).map(post => ({params:{id:post.id}})); }
+return Astro.redirect(withBase(`/blog/${Astro.params.id}/`));
+---

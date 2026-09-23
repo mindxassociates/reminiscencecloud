@@ -1,0 +1,17 @@
+/* Typography, palette and images recovered from the original GoDaddy site. */
+:root{--ink:hsl(0 0% 4%);--muted:hsl(213 16% 40%);--paper:hsl(216 33% 97%);--blue:hsl(212 32% 42%);--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif}
+h1,h2,h3,h4,h5,h6{font-family:var(--serif)}
+.hero h1,.page-hero h1{font-weight:300}
+.brand .original-logo{width:280px;height:68px;object-fit:contain}
+.intro-story img{aspect-ratio:1;border-radius:50%;width:100%;max-width:440px;justify-self:center;object-position:center}
+.cta{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:70px;align-items:center}
+.cta-copy>p:not(.kicker):not(.availability){color:var(--muted);font-size:1.15rem}
+.cta-photo{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;max-width:360px;justify-self:center}
+.footer-crisis{grid-column:1/-1;border-top:1px solid var(--line);padding-top:20px}
+.footer-crisis p{max-width:1000px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.prose h2{font:500 2.2rem/1.2 var(--serif);margin-top:2.5rem}
+.prose h3{font:500 1.7rem/1.25 var(--serif)}
+@media(max-width:1050px) and (min-width:801px){.site-header{padding-inline:24px}.brand .original-logo{width:225px}.site-header ul{gap:16px}}
+@media(max-width:800px){.site-header{height:96px;min-height:96px;padding:14px 22px}.site-header nav{top:96px}.brand .original-logo{width:225px;height:58px}.hero-copy{padding:95px 26px 85px}.hero{min-height:0}.hero h1{font-size:3.6rem}.intro-story{padding:75px 28px;gap:45px}.intro-story img{border-radius:50%}.cta{grid-template-columns:1fr;gap:45px;padding:75px 28px}.cta-photo{max-width:300px}.focus-section,.testimonials{padding:75px 28px}.focus-grid article,.quote-grid blockquote{padding:32px;min-height:0}.page-hero{padding:85px 28px}.footer-crisis{grid-column:1}.brand{min-width:0}.button{max-width:100%;white-space:normal}}
+@media(max-width:360px){.brand .original-logo{width:190px}.site-header{padding-inline:16px}.hero h1{font-size:3.1rem}}

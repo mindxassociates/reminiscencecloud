@@ -1,4 +1,5 @@
 ---
-import Base from '../../layouts/Base.astro';
+import settings from '../../content/settings.json';
+const destination = settings.schedulingUrlZh;
 ---
-<Base title="预约免费咨询" locale="zh" counterpart="/en/book/"><section class="page-hero"><p class="kicker">免费 15 分钟电话咨询</p><h1>让我们找一个时间聊聊。</h1><p>此页面保留原网站的预约地址。正式上线前，请在这里连接执业者批准的安全预约或咨询申请服务。</p></section><section class="contact"><div><h2>电话咨询会谈些什么？</h2><p>您可以提出问题、简单分享为何考虑心理咨询，并感受我们是否适合一起工作。没有压力，也不需要立即承诺。</p></div><div class="soft"><h2>回复时间</h2><p>Sharon 会在 1–2 个工作日内回复咨询申请。目前为纽约州、新泽西州和加州的来访者提供远程咨询，并在纽约市提供面对面咨询。</p><p class="pending"><strong>上线前需要完成：</strong>添加经过确认的安全预约表单或预约链接。</p></div></section></Base>
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta http-equiv="refresh" content={`0;url=${destination}`}><meta name="robots" content="noindex"><title>Book a Free Consultation</title></head><body><p><a href={destination}>打开免费15分钟咨询预约日历</a></p></body></html>

@@ -3,4 +3,4 @@ import Base from '../../layouts/Base.astro'; import { getCollection, render } fr
 export async function getStaticPaths(){const p=await getCollection('postsEn',x=>x.data.published);return p.map(post=>({params:{id:post.id},props:{post}}))}
 const {post}=Astro.props; const {Content}=await render(post);
 ---
-<Base title={post.data.seoTitle||post.data.title} description={post.data.seoDescription||post.data.summary} counterpart="/zh/blog/"><article class="prose"><p class="kicker">Blog</p><h1>{post.data.title}</h1><p class="lede">{post.data.summary}</p><Content/></article></Base>
+<Base title={post.data.seoTitle||post.data.title} description={post.data.seoDescription||post.data.summary} counterpart={`/zh/blog/${post.id}/`}><article class="prose"><p class="kicker">Blog</p><h1>{post.data.title}</h1><p class="lede">{post.data.summary}</p><Content/></article></Base>

@@ -1,1 +1,87 @@
-{"title":"FAQ","heading":"Questions you might have.","intro":"Reaching out to a therapist for the first time can feel uncertain. Here are some answers to the questions I hear most often.","groups":[{"title":"Getting started","items":[{"question":"How do I know if therapy is right for me?","answer":"We can explore this during a free 15-minute consultation, where you can share what brings you to therapy and ask questions about working together."},{"question":"What happens in the free consultation?","answer":"It is a 15-minute phone conversation to ask questions, briefly share what has brought you here, and get a sense of whether working together feels right. There is no pressure or commitment."},{"question":"How do I prepare for my first session?","answer":""},{"question":"How long does therapy take?","answer":""}]},{"title":"Sessions & format","items":[{"question":"How long is each session?","answer":"Sessions are 50 minutes and are generally held weekly or bi-weekly, depending on your needs."},{"question":"Do you offer telehealth?","answer":"Yes. Telehealth is available to clients located in New York, New Jersey, and California."},{"question":"Where is your office?","answer":"My in-person office is located in New York City. The exact address is shared after we schedule your first appointment."},{"question":"What if I need to cancel or reschedule?","answer":""}]},{"title":"Fees & insurance","items":[{"question":"What are your fees?","answer":""},{"question":"Do you accept insurance?","answer":""},{"question":"How do I find out if my insurance covers out-of-network therapy?","answer":""},{"question":"What payment methods do you accept?","answer":""}]},{"title":"Approach & fit","items":[{"question":"What therapeutic approaches do you use?","answer":"My work draws from EMDR, Internal Family Systems, somatic approaches, attachment-based therapy, cognitive-behavioral approaches, mindfulness, narrative therapy, and psychodynamic therapy, depending on your needs."},{"question":"Do you work with a specific population?","answer":"I work with adults navigating trauma, PTSD, anxiety, grief, loss, and life transitions."},{"question":"What if we're not a good fit?","answer":"The free consultation is a chance for both of us to consider whether working together feels right."}]}]}
+{
+  "title": "FAQ",
+  "heading": "Questions you might have.",
+  "intro": "Reaching out to a therapist for the first time can feel uncertain. Here are some answers to the questions I hear most often.",
+  "groups": [
+    {
+      "title": "Getting started",
+      "items": [
+        {
+          "question": "How do I know if therapy is right for me?",
+          "answer": "If you've been feeling stuck, overwhelmed, or like something isn't quite right — that's enough of a reason to reach out. You don't need to be in crisis to benefit from therapy. Many people come to therapy simply wanting to understand themselves better or to have a space that's entirely their own."
+        },
+        {
+          "question": "What happens in the free consultation?",
+          "answer": "The consultation is a 15-minute phone call — no paperwork, no intake forms. We'll talk briefly about what's brought you here and what you're hoping for. I'll answer any questions you have, and we'll get a sense of whether working together feels like a good fit. There's no pressure and no commitment."
+        },
+        {
+          "question": "How do I prepare for my first session?",
+          "answer": "You don't need to prepare anything. Come as you are. Some people find it helpful to think about what's been on their mind lately, but there's no agenda you need to bring. The first session is mostly about getting to know each other and beginning to understand what you're looking for."
+        },
+        {
+          "question": "How long does therapy take?",
+          "answer": "There's no single answer to this — it depends on what you're working through, how you respond to the process, and what your goals are. Some people find meaningful change in a few months; others work with me for a year or more. We'll check in regularly about how things are going and adjust as needed."
+        }
+      ]
+    },
+    {
+      "title": "Sessions & format",
+      "items": [
+        {
+          "question": "How long is each session?",
+          "answer": "Sessions are 50 minutes. Most clients meet weekly, especially at the start of therapy. As things progress, some people shift to bi-weekly sessions. We'll find a rhythm that works for you."
+        },
+        {
+          "question": "Do you offer telehealth?",
+          "answer": "Yes. Telehealth is available to clients located in New York, New Jersey, and California."
+        },
+        {
+          "question": "Where is your office?",
+          "answer": "My in-person office is located in New York City. The exact address is shared after we schedule your first appointment."
+        },
+        {
+          "question": "What if I need to cancel or reschedule?",
+          "answer": "I ask for at least 48 hours' notice for cancellations or reschedules. Sessions cancelled with less than 48 hours' notice are charged the full session fee. I understand that life happens — if something unexpected comes up, please reach out as soon as you can."
+        }
+      ]
+    },
+    {
+      "title": "Fees & insurance",
+      "items": [
+        {
+          "question": "What are your fees?",
+          "answer": "My individual session fee is $250. We can discuss session length, payment, and any questions about fees during the free consultation."
+        },
+        {
+          "question": "Do you accept insurance?",
+          "answer": "I am an out-of-network provider and do not bill insurance directly. However, many insurance plans offer out-of-network mental health benefits, which means you may be reimbursed for a portion of the session fee. I can provide a monthly superbill (a detailed receipt) that you can submit to your insurance company."
+        },
+        {
+          "question": "How do I find out if my insurance covers out-of-network therapy?",
+          "answer": "Call the member services number on the back of your insurance card and ask: \"Do I have out-of-network mental health benefits?\" and \"What is my out-of-network deductible and reimbursement rate for outpatient psychotherapy?\" Confirm the applicable billing code with your therapist and insurer. Reimbursement depends on your plan."
+        },
+        {
+          "question": "What payment methods do you accept?",
+          "answer": "I accept all major credit and debit cards, HSA/FSA cards, and Zelle. Payment is due at the time of each session."
+        }
+      ]
+    },
+    {
+      "title": "Approach & fit",
+      "items": [
+        {
+          "question": "What therapeutic approaches do you use?",
+          "answer": "I take an individualized psychodynamic approach and incorporate CBT, EMDR, IFS, and attachment-based work. I am trained in EMDR and IFS. We choose an approach together based on your needs, preferences, and readiness, rather than following one method for everyone."
+        },
+        {
+          "question": "Do you work with a specific population?",
+          "answer": "This practice supports adults with anxiety, depression, trauma, self-esteem, relationships, grief, and life transitions. I offer sessions in English and Mandarin, with particular attention to Asian, Asian American, and other BIPOC experiences, cultural identity, and family expectations."
+        },
+        {
+          "question": "What if we're not a good fit?",
+          "answer": "The therapeutic relationship is one of the most important factors in whether therapy helps — so fit really matters. If after a few sessions it doesn't feel right, I'll tell you honestly, and I'll do my best to connect you with someone who might be a better match. There's no shame in that; it's part of good care."
+        }
+      ]
+    }
+  ]
+}

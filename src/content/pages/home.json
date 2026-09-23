@@ -1,6 +1,37 @@
 {
-  "eyebrow":"Trauma-informed psychotherapy · New York City","title":"You don't have to carry this alone.","intro":"Trauma-informed therapy for adults navigating PTSD, anxiety, grief, and life transitions. A gentle, collaborative approach — at your own pace.","availability":"Accepting new clients · NY, NJ & CA · Virtual · In-person NYC",
-  "welcomeTitle":"Healing at the pace of your nervous system","welcomeBody":"Trauma doesn't follow a timeline, and neither does healing. My work is rooted in the belief that every person carries within them the capacity for recovery — sometimes it just needs the right conditions to emerge.","welcomeBodyTwo":"Drawing from somatic, attachment-based, and EMDR-informed frameworks, I offer a space that is unhurried, non-judgmental, and deeply attuned to where you are right now. We move at the pace that feels safe for you.",
-  "areas":[{"title":"Trauma & PTSD","body":"Finding safety in your own body again."},{"title":"Anxiety","body":"Quieting the noise that won't let you rest."},{"title":"Grief & Loss","body":"Making space for what you've had to let go."},{"title":"Life Transitions","body":"Navigating change without losing yourself."}],
-  "testimonials":[{"quote":"Really sweet!! Love the whole experience. Very comfortable and very caring","attribution":"Client, trauma recovery"},{"quote":"I came in feeling like I was broken beyond repair. I leave each session feeling a little more whole.","attribution":"Client, PTSD & anxiety"}]
+  "eyebrow": "Trauma-informed psychotherapy · New York City",
+  "title": "You don't have to carry this alone.",
+  "intro": "Therapy in English and Mandarin for adults navigating anxiety, depression, trauma, and relationship challenges. Culturally sensitive support to understand yourself and move forward at your own pace.",
+  "availability": "Accepting new clients · NY, NJ & CA · Virtual · In-person NYC",
+  "welcomeTitle": "Understand yourself. Make room for change.",
+  "welcomeBody": "Trauma doesn't follow a timeline, and neither does healing. My work is rooted in the belief that every person carries within them the capacity for recovery — sometimes it just needs the right conditions to emerge.",
+  "welcomeBodyTwo": "I take an individualized psychodynamic approach, incorporating CBT, EMDR, and Internal Family Systems (IFS) according to your needs. Our work can help you notice patterns, understand emotions, and build on your strengths, with care for your cultural context.",
+  "areas": [
+    {
+      "title": "Trauma & PTSD",
+      "body": "Finding safety in your own body again."
+    },
+    {
+      "title": "Anxiety & Depression",
+      "body": "Support for worry, low mood, and self-doubt."
+    },
+    {
+      "title": "Grief & Loss",
+      "body": "Making space for what you've had to let go."
+    },
+    {
+      "title": "Life Transitions",
+      "body": "Navigating change without losing yourself."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "You can bring your full range of emotions, questions, and uncertainties into our work.",
+      "attribution": "Space to be heard"
+    },
+    {
+      "quote": "Together, we can explore your story, recognize your strengths, and make room for a more authentic way of living.",
+      "attribution": "Room to grow"
+    }
+  ]
 }

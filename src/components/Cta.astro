@@ -2,6 +2,8 @@
 import settings from '../content/settings.json';
 import { withBase } from '../paths.js';
 interface Props { locale?: 'en'|'zh' }
-const { locale='en' } = Astro.props; const zh=locale==='zh'; const href=withBase(zh?settings.schedulingUrlZh:settings.schedulingUrl);
+const { locale='en' } = Astro.props;
+const zh=locale==='zh';
+const href=withBase(zh?settings.schedulingUrlZh:settings.schedulingUrl);
 ---
-<section class="cta"><p class="kicker">{zh?'准备好开始了吗？':'Ready to begin?'}</p><h2>{zh?'第一步，只是简单地联系我。':'The first step is simply reaching out.'}</h2><p>{zh?'从一次免费的 15 分钟电话咨询开始。提交预约申请后，我会在 1–2 个工作日内回复，与您约定通话时间。无需立即决定是否开始咨询。':'Start with a free 15-minute phone consultation. Send a request and I’ll reply within 1–2 business days to arrange a time. No pressure, no commitment.'}</p><a class="button" href={href}>{zh?'预约免费咨询':'Request a Free Consultation'}</a><p class="availability">{zh?'目前在纽约、新泽西及加州以线上方式接受新来访者，并在纽约市提供面对面咨询。':'Currently accepting new clients in NY, NJ, and CA virtually, and in-person in NYC.'}</p></section>
+<section class="cta"><div class="cta-copy"><p class="kicker">{zh?'准备好开始了吗？':'Ready to begin?'}</p><h2>{zh?'第一步，只是简单地联系我。':'The first step is simply reaching out.'}</h2><p>{zh?'从一次免费的15分钟电话咨询开始。请直接在在线预约日历中选择适合您的日期和时间。无需立即决定是否开始治疗。':'Start with a free 15-minute phone consultation. Choose a date and time directly in the online booking calendar. No pressure, no commitment.'}</p><a class="button" href={href}>{zh?'预约免费咨询':'Book a Free Consultation'}</a><p class="availability">{zh?'目前在纽约、新泽西及加州以线上方式接受新来访者，并在纽约市提供面对面咨询。':'Currently accepting new clients in NY, NJ, and CA virtually, and in-person in NYC.'}</p></div><img class="cta-photo" src={withBase('/images/office.jpg')} alt={zh?'温暖舒适的阅读空间':'Cozy reading space with dried flowers'} width="400" height="400" loading="lazy"></section>

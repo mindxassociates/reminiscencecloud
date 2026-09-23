@@ -1,1 +1,35 @@
-{"title":"About","heading":"A little about me.","subheading":"Psychotherapist. Trauma specialist. Believer in the body's capacity to heal.","name":"Xiuyun (Sharon) Miao, LCSW","body":"I'm a Licensed Clinical Social Worker in New York City specializing in trauma, PTSD, anxiety, and grief. My work draws from EMDR, Internal Family Systems (IFS), and somatic approaches — modalities that work with the whole person, not just the presenting problem.","secondary":"I believe healing happens in relationship. My role is to offer a space that is safe, unhurried, and genuinely attuned — where you can begin to understand yourself more deeply and move toward the life you want.","credentials":[{"title":"MSW, Clinical Social Work","detail":"New York University"},{"title":"LCSW","detail":"Licensed in NY/NJ/CA"},{"title":"EMDR Trained","detail":"EMDR Institute"},{"title":"Internal Family Systems (IFS)","detail":"Level 1 Trained"},{"title":"Trauma-Focused Cognitive Behavioral Therapy","detail":"Medical University of South Carolina"}],"philosophy":["Trauma is not a life sentence. It is a wound — and wounds, given the right conditions, can heal. My work is grounded in the conviction that every person, no matter what they've been through, carries within them the capacity for recovery.","I work slowly and carefully, following your nervous system's lead. There is no rushing here, no agenda to push through. We go at the pace that feels safe — and we adjust as we go.","I also believe that the therapeutic relationship itself is healing. The experience of being truly seen, heard, and held — without judgment — is often the most transformative part of the work."]}
+{
+  "title": "About",
+  "heading": "A little about me.",
+  "subheading": "Bilingual psychotherapist. Culturally sensitive care. Space to explore your authentic self.",
+  "name": "Xiuyun (Sharon) Miao, LCSW",
+  "body": "I'm Xiuyun (Sharon) Miao, a Licensed Clinical Social Worker licensed in New York, New Jersey, and California. I offer therapy in English and Mandarin for anxiety, depression, trauma, self-esteem, intimacy, and relationship concerns. I earned my Master of Social Work at New York University in 2018.",
+  "secondary": "My work is especially attentive to the experiences of Asian, Asian American, and other BIPOC clients. Together, we can explore how culture, family expectations, past experiences, and relationships shape the way you see yourself, while making room for your own needs and strengths.",
+  "credentials": [
+    {
+      "title": "MSW, Clinical Social Work",
+      "detail": "New York University"
+    },
+    {
+      "title": "LCSW",
+      "detail": "Licensed in NY/NJ/CA"
+    },
+    {
+      "title": "EMDR Trained",
+      "detail": "Trained in EMDR"
+    },
+    {
+      "title": "Internal Family Systems (IFS)",
+      "detail": "Trained in IFS"
+    },
+    {
+      "title": "Cognitive Behavioral Therapy (CBT)",
+      "detail": "Integrated into individualized care"
+    }
+  ],
+  "philosophy": [
+    "Trauma is not a life sentence. It is a wound — and wounds, given the right conditions, can heal. My work is grounded in the conviction that every person, no matter what they've been through, carries within them the capacity for recovery.",
+    "I work slowly and carefully, following your nervous system's lead. There is no rushing here, no agenda to push through. We go at the pace that feels safe — and we adjust as we go.",
+    "I also believe that the therapeutic relationship itself is healing. The experience of being truly seen, heard, and held — without judgment — is often the most transformative part of the work."
+  ]
+}

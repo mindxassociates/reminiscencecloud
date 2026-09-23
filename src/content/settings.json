@@ -1,12 +1,12 @@
 {
   "practiceName": "Reminiscence Cloud",
   "tagline": "Trauma-informed psychotherapy for adults.",
-  "primaryCtaLabel": "Request a Free Consultation",
-  "email": "",
+  "primaryCtaLabel": "Book a Free Consultation",
+  "email": "hello@reminiscencecloud.com",
   "phone": "",
   "location": "New York City · Telehealth in NY, NJ & CA",
-  "schedulingUrl": "/en/book/",
-  "schedulingUrlZh": "/zh/book/",
+  "schedulingUrl": "https://tidycal.com/1vkq4vy/15-minute-meeting",
+  "schedulingUrlZh": "https://tidycal.com/1vkq4vy/15-minute-meeting",
   "instagramUrl": "https://www.instagram.com/reminiscencecloud/",
   "linkedinUrl": "https://www.linkedin.com/in/xiuyunmiao/"
 }

@@ -1,6 +1,71 @@
-{"title":"Services","heading":"Therapy shaped around you.","intro":"Every person who walks through my door carries a different story. My work adapts to yours.","expectation":"Therapy with me is collaborative, unhurried, and grounded in safety. Sessions are 50 minutes and held weekly or bi-weekly depending on your needs. I offer both in-person appointments in New York City and telehealth sessions for clients located in New York, New Jersey, and California.","consultation":"Before we begin, I offer a free 15-minute phone consultation — a chance to ask questions, share what's brought you here, and get a sense of whether working together feels right. There's no pressure and no commitment.","items":[
-{"title":"Trauma & PTSD","tagline":"Finding safety in your own body again.","body":"Trauma can leave you feeling disconnected from yourself, hypervigilant, or trapped in the past. Using EMDR, somatic, and attachment-based approaches, we work gently to process what happened — at a pace that feels safe — so it no longer holds the same power over your present.","methods":["EMDR","Somatic Experiencing","Attachment-based therapy"]},
-{"title":"Anxiety","tagline":"Quieting the noise that won't let you rest.","body":"Anxiety often shows up as a relentless inner critic, a body that won't settle, or a mind that races through worst-case scenarios. We explore the roots of your anxiety — not just the symptoms — and build a more grounded, compassionate relationship with your nervous system.","methods":["Cognitive-behavioral approaches","Somatic Experiencing","Mindfulness-based techniques"]},
-{"title":"Grief & Loss","tagline":"Making space for what you've had to let go.","body":"Grief doesn't follow a timeline, and it doesn't only come from death. Loss of a relationship, a version of yourself, a future you imagined — all of it deserves to be witnessed. I offer a space where grief can be held without being rushed or fixed.","methods":["Attachment-based therapy","Narrative therapy","Somatic approaches"]},
-{"title":"Life Transitions","tagline":"Navigating change without losing yourself.","body":"Major transitions — a new city, a career shift, the end of a relationship, becoming a parent — can shake our sense of identity and belonging. Therapy can be a steady anchor while the ground shifts beneath you.","methods":["Psychodynamic therapy","Narrative therapy","Attachment-based therapy"]}],
-"format":[{"label":"Session length","value":"50 minutes"},{"label":"Frequency","value":"Weekly or bi-weekly"},{"label":"In-person","value":"New York City, NY"},{"label":"Telehealth","value":"Available for NY/NJ/CA clients"},{"label":"Free consultation","value":"15-minute phone call, no commitment"}]}
+{
+  "title": "Services",
+  "heading": "Therapy shaped around you.",
+  "intro": "Every person who walks through my door carries a different story. My work adapts to yours.",
+  "expectation": "Therapy with me is collaborative, unhurried, and grounded in safety. Sessions are 50 minutes and held weekly or bi-weekly depending on your needs. I offer both in-person appointments in New York City and telehealth sessions for clients located in New York, New Jersey, and California.",
+  "consultation": "Before we begin, I offer a free 15-minute phone consultation — a chance to ask questions, share what's brought you here, and get a sense of whether working together feels right. There's no pressure and no commitment.",
+  "items": [
+    {
+      "title": "Trauma & PTSD",
+      "tagline": "Finding safety in your own body again.",
+      "body": "Trauma can leave you feeling disconnected from yourself, hypervigilant, or trapped in the past. Using EMDR, IFS, and attachment-based approaches, we work gently to process what happened — at a pace that feels safe — so it no longer holds the same power over your present.",
+      "methods": [
+        "EMDR",
+        "Internal Family Systems (IFS)",
+        "Attachment-based therapy"
+      ]
+    },
+    {
+      "title": "Anxiety & Depression",
+      "tagline": "Support for worry, low mood, and self-doubt.",
+      "body": "Anxiety and depression can affect your energy, confidence, relationships, and sense of purpose. We explore the patterns behind worry, self-criticism, or low mood, and use tools such as CBT, mindfulness, and IFS to support change that fits your life.",
+      "methods": [
+        "Cognitive-behavioral approaches",
+        "Internal Family Systems (IFS)",
+        "Mindfulness-based techniques"
+      ]
+    },
+    {
+      "title": "Grief & Loss",
+      "tagline": "Making space for what you've had to let go.",
+      "body": "Grief doesn't follow a timeline, and it doesn't only come from death. Loss of a relationship, a version of yourself, a future you imagined — all of it deserves to be witnessed. I offer a space where grief can be held without being rushed or fixed.",
+      "methods": [
+        "Attachment-based therapy",
+        "Culturally sensitive therapy",
+        "Strength-based therapy"
+      ]
+    },
+    {
+      "title": "Life Transitions",
+      "tagline": "Navigating change without losing yourself.",
+      "body": "Major transitions — a new city, a career shift, the end of a relationship, becoming a parent — can shake our sense of identity and belonging. Therapy can be a steady anchor while the ground shifts beneath you.",
+      "methods": [
+        "Psychodynamic therapy",
+        "Culturally sensitive therapy",
+        "Attachment-based therapy"
+      ]
+    }
+  ],
+  "format": [
+    {
+      "label": "Session length",
+      "value": "50 minutes"
+    },
+    {
+      "label": "Frequency",
+      "value": "Weekly or bi-weekly"
+    },
+    {
+      "label": "In-person",
+      "value": "New York City, NY"
+    },
+    {
+      "label": "Telehealth",
+      "value": "Available for NY/NJ/CA clients"
+    },
+    {
+      "label": "Free consultation",
+      "value": "15-minute phone call, no commitment"
+    }
+  ]
+}
