@@ -17,3 +17,5 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 @media(max-width:360px){.brand .original-logo{width:190px}.site-header{padding-inline:16px}.hero h1{font-size:3.1rem}}
 
 .footer-profile{grid-column:1/-1;margin:0;text-align:center}.footer-profile a{text-underline-offset:4px}
+
+.footer-profile .sx-verified-seal{display:inline-block}.footer-profile .sx-verified-seal img{margin-inline:auto}
