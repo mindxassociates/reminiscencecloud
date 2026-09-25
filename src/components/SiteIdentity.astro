@@ -1,0 +1,33 @@
+---
+import settings from '../content/settings.json';
+import { withBase } from '../paths.js';
+const { path, locale, title, description } = Astro.props;
+const url = (value) => new URL(withBase(value), Astro.site).href;
+const personId = url('/about/#sharon-miao');
+const organizationId = url('/#practice');
+const pageUrl = url(path);
+const data = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'Organization', '@id': organizationId, name: settings.practiceName,
+      address: { '@type': 'PostalAddress', addressLocality: 'New York', addressRegion: 'NY', postalCode: '10016', addressCountry: 'US' },
+      url: url('/'), logo: url('/images/logo-original.png'), email: settings.email,
+      description: 'Psychotherapy for adults in English and Mandarin. In-person in New York City and telehealth in New York, New Jersey and California.',
+      areaServed: ['New York', 'New Jersey', 'California'], sameAs: [settings.instagramUrl],
+      contactPoint: { '@type': 'ContactPoint', contactType: 'Therapy inquiries', email: settings.email, availableLanguage: ['English', 'Mandarin Chinese'] } },
+    { '@type': 'Person', '@id': personId, name: 'Xiuyun (Sharon) Miao', alternateName: ['Sharon Miao', '苗秀云'],
+      honorificSuffix: 'LCSW', jobTitle: 'Psychotherapist', url: url('/about/'),
+      image: url('/images/portrait.jpg'), worksFor: { '@id': organizationId },
+      knowsLanguage: ['English', 'Mandarin Chinese'],
+      alumniOf: { '@type': 'CollegeOrUniversity', name: 'New York University' },
+      sameAs: ['https://www.psychologytoday.com/profile/1274912', settings.linkedinUrl] },
+    { '@type': 'WebSite', '@id': url('/#website'), url: url('/'), name: settings.practiceName,
+      publisher: { '@id': organizationId }, inLanguage: ['en', 'zh-CN'] },
+    { '@type': path === '/about/' || path === '/zh/about/' ? 'ProfilePage' : 'WebPage',
+      '@id': `${pageUrl}#webpage`, url: pageUrl, name: title, description,
+      inLanguage: locale === 'zh' ? 'zh-CN' : 'en', isPartOf: { '@id': url('/#website') },
+      ...(path === '/about/' || path === '/zh/about/' ? { mainEntity: { '@id': personId } } : {}) }
+  ]
+};
+---
+<script type="application/ld+json" is:inline set:html={JSON.stringify(data).replace(/</g, '\\u003c')} />

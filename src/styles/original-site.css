@@ -38,3 +38,8 @@ footer .footer-profile .sx-verified-seal{float:none!important;margin-inline:auto
 @media(max-width:800px){.site-header{height:132px;min-height:132px;padding-bottom:48px}.site-header nav{top:132px}.site-header .header-actions>.language{top:auto;bottom:12px;transform:translateX(-50%)}.nav-language{display:none}}
 
 .hero-copy>.kicker,.hero-copy>.availability{margin-left:auto;margin-right:auto;text-align:center}
+
+/* Keep the descriptive homepage heading readable across viewport sizes. */
+.hero h1{font-size:clamp(2.6rem,5.8vw,5.4rem);max-width:1050px;margin-inline:auto;line-height:1.1;text-wrap:balance}
+.focus-grid h3 a{text-decoration-thickness:1px;text-underline-offset:6px}
+.intro-story a{text-underline-offset:4px}
