@@ -1,0 +1,9 @@
+---
+import SpecialtyPage from '../components/SpecialtyPage.astro';
+import specialties from '../data/specialties.json';
+export function getStaticPaths() {
+  return specialties.map(specialty => ({ params: { specialty: specialty.slug }, props: { specialty } }));
+}
+const { specialty } = Astro.props;
+---
+<SpecialtyPage specialty={specialty} locale="en"/>

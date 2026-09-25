@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import Cta from './Cta.astro';
+import specialties from '../data/specialties.json';
+import { withBase } from '../paths.js';
+const { specialty, locale = 'en' } = Astro.props;
+const zh = locale === 'zh';
+const page = specialty[locale];
+const prefix = zh ? '/zh' : '';
+const counterpart = `${zh ? '' : '/zh'}/${specialty.slug}/`;
+---
+<Base title={page.seoTitle} description={page.description} locale={locale} counterpart={counterpart}>
+  <div class="specialty-page">
+    <section class="page-hero specialty-hero">
+      <a class="kicker" href={withBase(`${prefix}/services/`)}>{zh ? '心理咨询服务' : 'Therapy services'}</a>
+      <h1>{page.h1}</h1>
+      <p class="specialty-byline">Xiuyun (Sharon) Miao, LCSW · {zh ? '英语与普通话' : 'English & Mandarin'}</p>
+    </section>
+    <div class="specialty-body">
+      <section class="introduction" aria-label={zh ? '简介' : 'Introduction'}>{page.intro.map(p => <p>{p}</p>)}</section>
+      <section class="signs"><h2>{page.signsHeading}</h2><ul>{page.signs.map(sign => <li>{sign}</li>)}</ul><p>{page.signsNote}</p>
+        {page.source && <p class="further-reading">{zh ? '延伸阅读：' : 'Further reading: '}<a href={page.source.url}>{page.source.label}</a></p>}
+      </section>
+      <section><h2>{page.approachesHeading}</h2>{page.approaches.map(approach => <div class="approach"><h3>{approach.title}</h3><p>{approach.body}</p></div>)}</section>
+      <section class="session-format"><h2>{zh ? '纽约市面对面咨询，以及纽约州、新泽西州和加州线上咨询' : 'In-person in NYC and online across NY, NJ & CA'}</h2><p>{page.formatIntro}</p><p>{zh ? '每次咨询通常为 50 分钟，每周或隔周一次，具体频率由我们根据您的需要共同商定。线上咨询时，请准备一个安静、私密的空间和稳定的网络连接；每次咨询时，您需要身处纽约州、新泽西州或加利福尼亚州。' : 'Sessions are typically 50 minutes, weekly or every other week, with frequency agreed together based on your needs. For telehealth, choose a quiet, private space with a reliable internet connection. You need to be physically located in New York, New Jersey, or California at the time of each online session.'}</p><p>{zh ? '可使用英语或普通话进行咨询，也可以讨论哪种语言更适合表达您的经历。' : 'Sessions are available in English and Mandarin. We can discuss which language feels most comfortable for expressing your experiences.'}</p></section>
+      <section class="specialty-faq"><h2>{zh ? '常见问题' : 'Frequently asked questions'}</h2>{page.faqs.map(faq => <details><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>
+      <section class="related"><h2>{zh ? '进一步了解' : 'Explore related support'}</h2><div class="related-links">{specialties.filter(s => s.slug !== specialty.slug).map(s => <a href={withBase(`${prefix}/${s.slug}/`)}>{s[locale].label}<span aria-hidden="true"> →</span></a>)}</div><p>{page.blogIntro} <a href={withBase(`${prefix}/blog/grief-and-connection/`)}>{zh ? '生命终将结束，我们应该怎样生活？' : 'Grief doesn’t always mean letting go.'}</a></p><p><a href={withBase(`${prefix}/about/`)}>{zh ? '了解 Sharon 的咨询方式' : 'Learn more about Sharon’s approach'}</a> · <a href={withBase(`${prefix}/contact/`)}>{zh ? '联系我' : 'Reach out with a question'}</a></p></section>
+    </div>
+  </div>
+  <Cta locale={locale}/>
+</Base>
+<style>
+.specialty-page { padding-bottom: 2rem; }
+.specialty-hero { padding-bottom: 2.5rem; }
+.specialty-hero h1 { max-width: 1000px; margin-inline: auto; font-size: clamp(2.7rem, 5.5vw, 5rem); line-height: 1.08; }
+.specialty-hero .specialty-byline { font-size: .95rem; }
+.specialty-body { width: min(780px, calc(100% - 40px)); margin: 0 auto; }
+.specialty-body section { margin-bottom: 3.75rem; }
+.specialty-body h2 { font-size: clamp(2rem, 3.3vw, 2.8rem); line-height: 1.15; margin-bottom: 1.3rem; }
+.specialty-body h3 { font-size: 1.75rem; margin: 1.6rem 0 .6rem; }
+.specialty-body p, .specialty-body li { line-height: 1.85; }
+.specialty-body p { margin: 0 0 1rem; }
+.signs { background: #edf2f6; padding: 2rem; border-radius: 4px; }
+.signs ul { padding-left: 1.3rem; margin: 0 0 1.2rem; }
+.signs li { padding-left: .3rem; margin-bottom: .6rem; }
+.signs .further-reading { font-size: .85rem; margin-bottom: 0; }
+.specialty-body a { text-underline-offset: 4px; }
+.specialty-faq details { padding: 1.25rem 0; border-bottom: 1px solid #cbd3dc; }
+.specialty-faq summary { cursor: pointer; font-weight: 500; line-height: 1.6; }
+.specialty-faq details p { margin: 1rem 0 0; }
+.related-links { display: grid; gap: .8rem; margin-bottom: 1.7rem; }
+.related-links a { padding: .85rem 1rem; border: 1px solid #cbd3dc; border-radius: 4px; }
+@media(max-width:600px) { .signs { padding: 1.4rem; } .specialty-body section { margin-bottom: 2.75rem; } }
+</style>
